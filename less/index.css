@@ -133,15 +133,31 @@ table {
 html,
 body {
   height: 100%;
+  /*Containers for the website*/
 }
 .main_container {
   width: 100%;
   height: 1000px;
   border: 2px solid red;
 }
+.main_container .main_nav_container {
+  width: 100%;
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main_container .main_nav_container nav {
+  width: 500px;
+}
+.main_container .main_nav_container nav a {
+  padding-right: 4rem;
+  text-decoration: none;
+  color: black;
+}
 .top_container {
   width: 100%;
-  border: 2px solid black;
   display: flex;
   justify-content: flex-start;
 }
@@ -150,29 +166,77 @@ body {
   height: 300px;
   border: 2px solid blue;
 }
-.top_container .introduction {
+.top_container .introduction_container {
   height: 300px;
   margin-left: 0px;
   width: 100%;
-  border: 2px solid purple;
-  order: 3;
-  background-color: lightgrey;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_container .introduction_container .introduction {
+  height: 130px;
+  margin-left: 0px;
+  width: 400px;
+  text-align: center;
 }
 .middle_container {
   width: 100%;
   height: 1000px;
-  border: 2px solid cyan;
   display: flex;
   justify-content: flex-start;
-}
-.middle_container .left_info_container {
-  width: 400px;
-  height: 700px;
-  border: 2px solid green;
 }
 .middle_container .resume_container {
   width: 100%;
   margin-left: 0px;
   height: 1000px;
-  border: 2px solid turquoise;
+}
+.left_info_container {
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+.left_info_container .info {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid white;
+  padding-top: 1.25rem;
+}
+.left_info_container .social_media {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid white;
+  padding-top: 1.25rem;
+}
+.left_info_container .info_tag {
+  font-size: 20px;
+  text-align: center;
+  padding: 0.625rem 0 0.625rem 0;
+  background-color: black;
+  color: white;
+}
+.left_info_container .social_tag {
+  font-size: 20px;
+  text-align: center;
+  padding: 0.625rem 0 0.625rem 0;
+  background-color: black;
+  color: white;
+}
+/*paragraphs,h,etc*/
+.introduction h1 {
+  font-size: 2.5rem;
+}
+.introduction p {
+  font-size: 1.5rem;
+}
+.left_info_container h3 {
+  color: white;
+  margin-left: 1.50rem;
+}
+.left_info_container p {
+  color: white;
+  margin-left: 1.50rem;
 }
