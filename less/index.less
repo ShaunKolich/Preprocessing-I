@@ -63,7 +63,7 @@ html, body {
 }
 .main_container{
 	width:100%;
-	height:1000px;
+	// height:100%;
 	// border:2px solid red;
 	.main_nav_container{
 	width:100%;
@@ -95,9 +95,10 @@ html, body {
 	.picture_container{
 		width:400px;
 		height:300px;
-		border:2px solid blue;
+		// border:2px solid blue;
+		background: linear-gradient(#485563,#29323c);
 
-	}
+		}
 	.introduction_container{
 		height: 300px;
 		margin-left: 0px;
@@ -123,10 +124,11 @@ html, body {
 
 .middle_container{
 	width:100%;
-	height:1000px;
+	// height:1200px;
 	// border:2px solid cyan;
 	display: flex;
-	justify-content:flex-start;
+	justify-content:column;
+	// flex-wrap:wrap;
 
 	.resume_container{
 		width:100%;
@@ -135,31 +137,43 @@ html, body {
 		// border:2px solid turquoise;
 		background-color:whitesmoke;
 		border-top:1px dashed black;
-	.work_exp_comtainer{
+	.work_exp_container{
 		width:100%;
-		height:380px;
+		height:500px;
 		// border:2px solid black;
 		display: flex;
 		justify-content: center;
+		border-bottom:1px dashed black;
 	.work_exp{
 		margin-top:1.25em;
 		width:50%;
-		height:380px;
+		height:580px;
 		// border: 2px solid grey;
 	}
-
 	}
+}
 
-	}
+.skills_container{
+	width:100%;
+	height:350px;
+	border-bottom:1px dashed black;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+.skills{
+	margin-top:1.25em;
+	width:50%;
+	height:330px;
+}
 }
 
 .left_info_container{
 	width:400px;
-	height:700px;
+	height:1000px;
 	// border:2px solid green;
 	display: flex;
 	flex-direction:column;
-	background-color: black;
+	background: linear-gradient(#485563,#29323c);
 	.info {
 	width:100%;
 	height:300px;
@@ -178,18 +192,35 @@ html, body {
 	font-size:20px;
 	text-align:center;
 	padding:0.625rem 0 0.625rem 0;
-	background-color:black;
+	background: linear-gradient(#485563,#29323c);
 	color:white;
 	}
 	.social_tag{
 	font-size:20px;
 	text-align:center;
 	padding:0.625rem 0 0.625rem 0;
-	background-color: black;
+	background: linear-gradient(#485563,#29323c);
 	color:white;
 	}
 }
+}
 
+.education_container{
+	width:100%;
+	height:150px;
+	// border:2px solid red;
+	display:flex;
+	justify-content:center;
+.education{
+margin-top:1.25em;
+}
+}
+footer{
+	width:100%;
+	height:50px;
+	// border:2px solid red;
+	background: linear-gradient(#485563,#29323c);
+}
 
 
 
@@ -213,7 +244,7 @@ html, body {
 		margin-left:1.50rem;
 	}
 }
-.work_exp_comtainer{
+.work_exp_container{
 	h2{
 	// border:2px solid grey;
 	text-align: center;
@@ -222,4 +253,23 @@ html, body {
 		list-style-type: disc;
 	}
 }
-
+.skills{
+	div{
+	text-align:center;
+	}
+	h2{
+	text-align:center;
+	}
+}
+.education{
+	ul{
+	list-style-type: disc;
+	}
+}
+.footer{
+	p{
+	text-align:center;
+	color:white;
+	padding-top:15px;
+	}
+}
