@@ -130,6 +130,8 @@ table {
 * {
   box-sizing: border-box;
 }
+/*mixin*/
+/*Variables*/
 html,
 body {
   height: 100%;
@@ -151,7 +153,7 @@ body {
 .main_container .main_nav_container nav a {
   padding-right: 4rem;
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 .top_container {
   width: 100%;
@@ -211,7 +213,7 @@ body {
   flex-wrap: wrap;
 }
 .middle_container .skills_container .skills {
-  margin-top: 1.25em;
+  margin-top: 2.25em;
   width: 50%;
   height: 330px;
 }
@@ -253,9 +255,10 @@ body {
   height: 150px;
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5em;
 }
 .education_container .education {
-  margin-top: 1.25em;
+  margin-top: .05em;
 }
 footer {
   width: 100%;
@@ -322,7 +325,6 @@ footer {
   }
   .main_container .middle_container {
     width: 500px;
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
   }
@@ -339,11 +341,10 @@ footer {
   .main_container .middle_container .resume_container .skills_container {
     height: 350px;
   }
-}
-.education_container {
-  width: 100px;
-}
-.education_container .education {
-  width: 100px;
-  border: 2px solid blue;
+  .education_container {
+    width: 100%;
+  }
+  .education_container .education {
+    width: 400px;
+  }
 }

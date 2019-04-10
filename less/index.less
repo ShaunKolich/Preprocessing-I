@@ -52,9 +52,19 @@ table {
 * {
     box-sizing: border-box;
 }
+/*mixin*/
+.center(@jc ) {
+	display: flex;
+	justify-content: @jc;
+
+}
+/*Variables*/
+@black:#000;
 
 html, body {
 	height: 100%;
+
+
 
 
 
@@ -82,7 +92,7 @@ html, body {
 	a{
 	padding-right:4rem;
 	text-decoration: none;
-	color:black;
+	color:@black;
 	}
 }
 }
@@ -108,8 +118,9 @@ html, body {
 		// border: 2px solid purple;
 		// order: 3;
 		background-color:whitesmoke;
-		display: flex;
-		justify-content: center;
+	.center(center);
+		// display: flex;
+		// justify-content: center;
 		align-items: center;
 
 	.introduction{
@@ -119,7 +130,7 @@ html, body {
 		// border:2px solid green;
 		text-align: center;
 
-   }
+}
 }
 }
 
@@ -163,7 +174,7 @@ html, body {
 	justify-content:center;
 	flex-wrap:wrap;
 .skills{
-	margin-top:1.25em;
+	margin-top:2.25em;
 	width:50%;
 	height:330px;
 }
@@ -213,11 +224,15 @@ html, body {
 	// border:2px solid red;
 	display:flex;
 	justify-content:center;
+	margin-bottom:1.5em;
 .education{
-margin-top:1.25em;
+	margin-top:.05em;
+	// border:2px solid red;
+
 }
 }
 footer{
+
 	width:100%;
 	height:50px;
 	// border:2px solid red;
@@ -310,7 +325,7 @@ a{
 }
 .middle_container{
 width:500px;
-border:2px solid red;
+// border:2px solid red;
 display:flex;
 flex-wrap:wrap;
 .left_info_container{
@@ -327,15 +342,14 @@ height:1000px;
 height:350px;
 }
 }
+}
+}
 
-}
-
-}
-}
 .education_container{
-	width:100px;
+	width:100%;
 	.education{
-		width:100px;
-		border:2px solid blue;
+		width:400px;
+		// border:2px solid blue;
 	}
+}
 }
