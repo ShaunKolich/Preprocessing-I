@@ -322,7 +322,7 @@ footer {
   }
   .main_container .middle_container {
     width: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
   }

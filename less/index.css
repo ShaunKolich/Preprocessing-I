@@ -340,3 +340,10 @@ footer {
     height: 350px;
   }
 }
+.education_container {
+  width: 100px;
+}
+.education_container .education {
+  width: 100px;
+  border: 2px solid blue;
+}
