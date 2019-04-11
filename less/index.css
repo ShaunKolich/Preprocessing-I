@@ -258,7 +258,7 @@ body {
   margin-bottom: 1.5em;
 }
 .education_container .education {
-  margin-top: 0.05em;
+  margin-top: .05em;
 }
 footer {
   width: 100%;
@@ -274,11 +274,11 @@ footer {
 }
 .left_info_container h3 {
   color: white;
-  margin-left: 1.5rem;
+  margin-left: 1.50rem;
 }
 .left_info_container p {
   color: white;
-  margin-left: 1.5rem;
+  margin-left: 1.50rem;
 }
 .work_exp_container h2 {
   text-align: center;
